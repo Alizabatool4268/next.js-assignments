@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import {lusitana} from './fonts/fonts';
 import "./globals.css";
 import style from "./page.module.css";
