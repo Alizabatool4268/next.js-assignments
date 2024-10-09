@@ -27,82 +27,99 @@
   }
 }
 
-.main {
+.navbar{
+  width: 100%;
+  height: 45px;
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
   align-items: center;
+  font-size: larger;
+  cursor:pointer;
+}
+.li:hover{
+    text-decoration: underline crimson;
+    transition: text-decoration 1s ease-in-out 4ms;
+}
+.mainheading{
+  text-align: center;
+  color:pink;
+}
+.body{
+  background-color: #000000;
+}
+.container{
+  margin-top: 10px;
+  background-color:transparent ;
+}
+
+.productlist{
+  height:390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:100%;
+  margin-top: 70px;
+}
+.productone{
+  height:300px;
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
 }
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.productTwo{
+  height:300px;
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
 }
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
+.productThree{
+  height:300px;
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.productFour{
+  height:300px;
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 .footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
+  color:pink;
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+ 
+ 
 }
 
-.footer img {
-  flex-shrink: 0;
+@media (min-width:250px) and (max-width:800px) {
+  .productlist{
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
 }
 
 /* Enable hover only on non-touch devices */
